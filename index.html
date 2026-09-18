@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pension Risk Calculator</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+
+<body>
+
+
+<div class="hero">
+
+
+<div class="header">
+
+<h1>💰 Pension Risk Calculator</h1>
+
+<p>
+Hitung kesiapan dana pensiun dan risiko finansial Anda.
+</p>
+
+</div>
+
+
+
+<div class="container">
+
+
+<div class="box">
+
+
+<h2>Data Keuangan</h2>
+
+
+<input id="nama" placeholder="Nama">
+
+<input id="umur" type="number" placeholder="Umur Sekarang">
+
+
+<input id="pensiun" type="number" placeholder="Umur Pensiun">
+
+
+<input id="pengeluaran" type="number" placeholder="Pengeluaran Bulanan Saat Pensiun">
+
+
+<input id="tabungan" type="number" placeholder="Tabungan Saat Ini">
+
+
+<input id="investasi" type="number" placeholder="Investasi Bulanan">
+
+
+<input id="return" type="number" placeholder="Return Investasi %">
+
+
+<input id="inflasi" type="number" placeholder="Inflasi %">
+
+
+<button onclick="hitung()">
+Hitung Risiko
+</button>
+
+
+<button onclick="resetData()" class="reset">
+Reset
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="hasil">
+
+
+<h2>Hasil Analisis</h2>
+
+
+<p id="hasil">
+Belum ada perhitungan
+</p>
+
+
+<canvas id="chart"></canvas>
+
+
+</div>
+
+
+
+</div>
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
